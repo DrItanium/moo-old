@@ -21,10 +21,25 @@
 ;
 ; Written by Joshua Scoggins
 ;------------------------------------------------------------------------------
+;Constants
 (defglobal MAIN 
 	   ?*trig-shift* = 10
 	   ?*trig-magnitude* = (left-shift 1 ?*trig-shift*)
-	   ?*angular-bits* = 9
-	   ?*number-of-angles* = (left-shift 1 ?*angular-bits*)
-)
 
+	   ?*angular-bits* = 9
+	   ?*number-of-angles* = (cast-as-short (left-shift 1 ?*angular-bits*))
+	   ?*full-circle* = ?*number-of-angles*
+	   ?*quarter-circle* = (cast-as-short (div ?*number-of-angles* 4))
+	   ?*half-circle* = (cast-as-short (div ?*number-of-angles* 2))
+	   ?*three-quarter-circle* = (cast-as-short (div (* ?*number-of-angles* 3) 4))
+	   ?*eighth-circle* = (cast-as-short (div ?*number-of-angles* 8))
+	   ?*sixteenth-circle* = (cast-as-short (div ?*number-of-angles* 16))
+
+	   ?*world-fractional-bits* = 10
+	   ?*world-one* = (cast-as-short (left-shift 1 ?*world-fractional-bits*))
+	   ?*world-one-half* = (cast-as-short (div ?*world-one* 2))
+	   ?*world-one-fourth* = (cast-as-short (div ?*world-one* 4))
+	   ?*world-three-fourths* = (cast-as-short (div (* ?*world-one) 3) 4)
+	   ?*default-random-seed* = 65005
+
+	   )
