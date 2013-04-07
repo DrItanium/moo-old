@@ -45,6 +45,7 @@
 #include "binary_operations.h"
 #include "platform/Platform.h"
 #include "init/AdventureEngineInit.h"
+#include "cseries/cseries.h"
 
 void UserFunctions(void);
 void EnvUserFunctions(void *);
@@ -59,9 +60,9 @@ void EnvUserFunctions(void *);
 /*   included in another file.                           */
 /*********************************************************/
 void UserFunctions()
-  {   
-  }
-  
+{   
+}
+
 /***********************************************************/
 /* EnvUserFunctions: Informs the expert system environment */
 /*   of any user defined functions. In the default case,   */
@@ -75,14 +76,14 @@ void UserFunctions()
 #pragma argsused
 #endif
 void EnvUserFunctions(
-  void *theEnv)
-  {
+		void *theEnv)
+{
 #if MAC_MCW || WIN_MCW || MAC_XCD
 #pragma unused(theEnv)
 #endif
-	  BinaryOperationsFunctionDefinitions(theEnv);
-     PlatformDetectionFunctionDefinitions(theEnv);
-     InitializeAdventureEngineFunctions(theEnv);
-     
-  }
+	BinaryOperationsFunctionDefinitions(theEnv);
+	PlatformDetectionFunctionDefinitions(theEnv);
+	InitializeAdventureEngineFunctions(theEnv);
+	DefineCSeriesFunctions(theEnv);
+}
 
