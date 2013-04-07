@@ -4,7 +4,7 @@
 # gcc is more prevalent these days
 #########################################################
 CC = gcc 
-OUTPUT = moo
+OUTPUT = moo.prog
 SUBDIRS = platform init
 OBJS = agenda.o analysis.o argacces.o bload.o bmathfun.o bsave.o \
  	classcom.o classexm.o classfun.o classinf.o classini.o \
