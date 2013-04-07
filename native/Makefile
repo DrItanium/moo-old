@@ -1,13 +1,10 @@
 ########### MAKEFILE FOR THE ADVENTURE ENGINE ###########
-
-
-
 #########################################################
 # While I don't like gcc as much as clang, I realize that 
 # gcc is more prevalent these days
 #########################################################
 CC = gcc 
-OUTPUT = adventure-engine 
+OUTPUT = moo
 SUBDIRS = platform init
 OBJS = agenda.o analysis.o argacces.o bload.o bmathfun.o bsave.o \
  	classcom.o classexm.o classfun.o classinf.o classini.o \
