@@ -1,5 +1,11 @@
-moo is a port of the source code to marathon infinity to the clips expert system.
+moo is a port of the source code to Marathon Infinity to an expert system written in CLIPS. 
+The name moo comes from my childhood when I would play marathon infinity at my friend's
+house. I always thought that the executable said moo instead of it actually being M 
+followed by the infinity symbol. That has always stuck with me because it is so hilarious.
+
+
 This project is licensed under the GPLv3 but is built on top of the Adventure Engine 
 which is licensed under the BSD 3-clause license. See COPYING.BSD for license details.
-
 The CLIPS source code is licensed under its own license. See COPYING.CLIPS for details
+
+Thanks to Bungie for releasing the Marathon infinity source code in its entirety. 
