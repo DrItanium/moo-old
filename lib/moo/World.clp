@@ -21,7 +21,7 @@
 ;
 ; Written by Joshua Scoggins
 ;------------------------------------------------------------------------------
-(defglobal moo
+(defglobal MAIN 
 	   ?*trig-shift* = 10
 	   ?*trig-magnitude* = (left-shift 1 ?*trig-shift*)
 	   ?*angular-bits* = 9

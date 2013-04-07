@@ -15,14 +15,7 @@
 ;You should have received a copy of the GNU General Public License
 ;along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ;------------------------------------------------------------------------------
-; Library.clp - Defines the moo module and acts as library entry point
-;------------------------------------------------------------------------------
-(defmodule moo
-	   (import init ?ALL)
-	   (import cortex ?ALL)
-	   (export ?ALL))
-;------------------------------------------------------------------------------
-; It's up to me to ensure proper load order
+; Library.clp - Defines the moo library 
 ;------------------------------------------------------------------------------
 (library-files "moo"
                "World.clp"

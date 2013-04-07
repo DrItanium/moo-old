@@ -21,5 +21,4 @@
 (initialize-adventure-engine)
 ;------------------------------------------------------------------------------
 (load-library cortex)
-(load-library dendrite)
 (run-application "moo")
