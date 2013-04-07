@@ -21,4 +21,4 @@
 (initialize-adventure-engine)
 ;------------------------------------------------------------------------------
 (load-library cortex)
-(run-application "moo")
+(load-application "moo")
