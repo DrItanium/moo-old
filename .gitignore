@@ -3,3 +3,8 @@ moo.prog
 *.o
 *.swp
 reference/
+libAdventureEngine.a
+.deps/
+obj/
+libs/
+*.class
