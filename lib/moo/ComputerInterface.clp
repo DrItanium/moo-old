@@ -67,8 +67,47 @@
 
 ;------------------------------------------------------------------------------
 (defclass MAIN::text-face-data
- (is-a Object)
- (slot index
-  (type INTEGER))
- (slot face)
- (slot color))
+  (is-a Object)
+  (slot index
+        (type INTEGER))
+  (slot face)
+  (slot color))
+;------------------------------------------------------------------------------
+(defclass MAIN::player-terminal-data
+  (is-a Object has-flags)
+  (role concrete)
+  (slot phase)
+  (slot state)
+  (slot current-group
+        (type SYMBOL INSTANCE INTEGER))
+  (slot level-completion-state
+        (type SYMBOL INSTANCE INTEGER))
+  (slot current-line
+        (type INTEGER))
+  (slot maximum-line
+        (type INTEGER))
+  (slot terminal-id
+        (type INTEGER))
+  (slot last-action-flag
+        (type INTEGER)))
+;------------------------------------------------------------------------------
+(defclass MAIN::terminal-key
+  (is-a Object)
+  (slot keycode)
+  (slot offset
+        (type INTEGER))
+  (slot mask
+        (type INTEGER))
+  (slot action-flag
+        (type SYMBOL)))
+;------------------------------------------------------------------------------
+(defclass MAIN::font-dimensions
+  (is-a Object)
+  (slot lines-per-screen
+        (type INTEGER))
+  (slot character-width
+        (type INTEGER)))
+;------------------------------------------------------------------------------
+;TODO: Convert the terminal_keys into an equivalent knowledge representation
+;------------------------------------------------------------------------------
+
