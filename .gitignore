@@ -1,5 +1,5 @@
 #ignore the adventure engine executable and the object files
-moo
+moo.prog
 *.o
 *.swp
 reference/
