@@ -6,7 +6,7 @@ export srcroot ?= $(progroot)
 # gcc is more prevalent these days
 #########################################################
 CC = gcc 
-OUTPUT = adventure-engine 
+OUTPUT = moo 
 SUBDIRS = System
 #the user defines this
 ifndef BACKEND_SPECIFIC
