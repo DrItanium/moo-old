@@ -20,11 +20,11 @@
 ;
 ; Written by Joshua Scoggins
 ;------------------------------------------------------------------------------
-(defclass has-flags 
+(defclass MAIN::has-flags 
   "A interface class that declares that the given class has a flags field"
   (is-a USER)
   (role abstract)
   (multislot flags
              (source composite)
-             (visiblity public)))
+             (visibility public)))
 ;------------------------------------------------------------------------------

@@ -21,3 +21,6 @@
 (initialize-adventure-engine)
 ;------------------------------------------------------------------------------
 (load-application "moo")
+; We've loaded the application, it's time to call reset to make sure that
+; everything gets loaded correctly into working memory
+(reset)
