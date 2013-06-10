@@ -40,7 +40,7 @@
 	   ?*world-one* = (cast-as-short (left-shift 1 ?*world-fractional-bits*))
 	   ?*world-one-half* = (cast-as-short (div ?*world-one* 2))
 	   ?*world-one-fourth* = (cast-as-short (div ?*world-one* 4))
-	   ?*world-three-fourths* = (cast-as-short (div (* ?*world-one) 3) 4)
+	   ?*world-three-fourths* = (cast-as-short (div (* ?*world-one* 3) 4))
 	   ?*default-random-seed* = 65005
 
 	   )
