@@ -22,6 +22,7 @@
 ;------------------------------------------------------------------------------
 (defclass MAIN::static-preprocessed-terminal-data 
   (is-a Object has-flags)
+  (role concrete)
   (slot total-length
         (type INTEGER))
   (slot lines-per-page
@@ -51,6 +52,7 @@
 ;------------------------------------------------------------------------------
 (defclass MAIN::terminal-groupings
   (is-a Object has-flags)
+  (role concrete)
   (slot type
         (type SYMBOL)
         (default ?NONE))

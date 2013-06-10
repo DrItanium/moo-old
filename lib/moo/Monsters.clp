@@ -104,6 +104,7 @@
 
 (defclass MAIN::monster-data 
   (is-a Object has-flags)
+  (role concrete)
   (slot monster-type 
         (type SYMBOL)
         (default ?NONE))
