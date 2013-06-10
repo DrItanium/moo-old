@@ -103,7 +103,7 @@
            )
 
 (defclass MAIN::monster-data 
-  (is-a Object)
+  (is-a Object has-flags)
   (slot monster-type 
         (type SYMBOL)
         (default ?NONE))

@@ -15,12 +15,16 @@
 ;You should have received a copy of the GNU General Public License
 ;along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ;------------------------------------------------------------------------------
-; Library.clp - Defines the moo library 
+; BaseClasses.clp - Base classes that provide a way to automate certain
+; parts of the marathon-infinity => moo translation 
+;
+; Written by Joshua Scoggins
 ;------------------------------------------------------------------------------
-(library-files "moo"
-               "BaseClasses.clp"
-               "Monsters.clp"
-               "ComputerInterface.clp"
-               "World.clp"
-)
+(defclass has-flags 
+  "A interface class that declares that the given class has a flags field"
+  (is-a USER)
+  (role abstract)
+  (multislot flags
+             (source composite)
+             (visiblity public)))
 ;------------------------------------------------------------------------------
